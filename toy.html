@@ -1,77 +1,62 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to my toy store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to My Toy Store</title>
+    <link rel="stylesheet" href="toy.css">
 </head>
 <body>
-    <h1>this is elmika's toy store</h1>
-    and this are the toys that are found in my toy store
-    <h2>brown bear warmies
-        brown curly bear warmies
-        barbie doll
-        car toys
-        lego
-        star war toys
-        yo-yo</h2>
-        
-        <div class="toy-item">
-            <h3>Brown Bear Warmies</h3>
-            <img src="https://www.bing.com/th?id=OPHS.8lFQoOgQyMKeZg474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1&c=8&pcl=f5f5f5" alt="">
-            <p>Description: A cuddly, soft plush bear filled with natural grains and lavender. Simply microwave for a few seconds to provide soothing warmth and comfort.</p>
-            <p>Price: $29.99</p>
-            <button class="buy-button" onclick="window.location.href='your-buy-link-for-brown-bear'">Buy Now</button>
-        </div>
-        
-        <div class="toy-item">
-            <h3>Brown Curly Bear Warmies</h3>
-            <img src="https://www.bing.com/th?id=OPHS.8htCX4bKqVn4Uw474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1&c=8&pcl=f5f5f5" alt="">
-            <p>Description: This adorable curly-haired bear offers the same comforting warmth as the Brown Bear Warmies, with a unique textured fur that's perfect for snuggling.</p>
-            <p>Price: $34.99</p>
-            <button class="buy-button" onclick="window.location.href='your-buy-link-for-brown-curly-bear'">Buy Now</button>
-        </div>
-        
-        <div class="toy-item">
-            <h3>Barbie Doll</h3>
-            <img src="https://www.bing.com/th?id=OIP.2z0JeXx1Iy9F4KsWJMjYTAAAAA&w=127&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
-            <p>Description: Classic Barbie Doll featuring a stylish outfit and trendy accessories. Perfect for imaginative play and collection.</p>
-            <p>Price: $19.99</p>
-            <button class="buy-button" onclick="window.location.href='your-buy-link-for-barbie-doll'">Buy Now</button>
-        </div>
-        
-        <div class="toy-item">
-            <h3>Car Toys</h3>
-            <img src="data:image/jpeg;base64,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" alt="">
-            <p>Description: A set of colorful and durable miniature cars designed for endless play. Includes various models such as race cars, trucks, and sports cars.</p>
-            <p>Price: $14.99 (for a pack of 5)</p>
-            <button class="buy-button" onclick="window.location.href='your-buy-link-for-car-toys'">Buy Now</button>
-        </div>
-        
-        <div class="toy-item">
-            <h3>LEGO Set</h3>
-            <img src="https://dkstatic.blob.core.windows.net/images/1545335/500x500/9085896_A.eps_High.jpg?d1df8b66c92cb5b00f6683d318f807d2" alt="">
-            <p>Description: A versatile building block set that sparks creativity. Comes with various pieces to construct imaginative designs, from vehicles to buildings.</p>
-            <p>Price: $49.99 (price varies by set size and complexity)</p>
-            <button class="buy-button" onclick="window.location.href='your-buy-link-for-lego-set'">Buy Now</button>
-        </div>
-        
-        <div class="toy-item">
-            <h3>Star Wars Toys</h3>
-            <img src="https://ae-pic-a1.aliexpress-media.com/kf/HTB13_jlXiHrK1Rjy0Flq6AsaFXa5/Star-Wars-Figure-Darth-Vader-PVC-Action-Figures-Collectible-Model-Toy-15cm.jpg_.webp" alt="">
-            <p>Description: A collection of action figures and playsets based on the iconic Star Wars universe. Includes characters, vehicles, and scenes for epic space adventures.</p>
-            <p>Price: $24.99 (price varies by item)</p>
-            <button class="buy-button" onclick="window.location.href='your-buy-link-for-star-wars-toys'">Buy Now</button>
-        </div>
-        
-        <div class="toy-item">
-            <h3>Yo-Yo</h3>
-            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7f8885da1e184ae4992c9765cac643f75/Magic-Yoyo-V3-YOYO-ALUMINUM-Alloy-Professional-Yoyo-Best-Unresponsive-or-Responsive-Yoyos-Stroller-yoyo-Advanced.jpg_.webp" alt="">
-            <p>Description: A classic toy for all ages featuring a sleek design and smooth spinning action. Ideal for tricks and skill-building.</p>
-        <p>Price: $9.99</p>
-        <button class="buy-button" onclick="window.location.href='your-buy-link-for-yo-yo'">Buy Now</button>
-    </div>
+    <header>
+        <h1>Welcome to Elmika's Toy Store</h1>
+    </header>
+    
+    <main>
+        <section>
+            <p>Here are the toys available in my store:</p>
+            <h2>Brown Bear Warmies, Brown Curly Bear Warmies, Barbie Doll, Car Toys, Lego, Star Wars Toys, and Yo-Yo</h2>
+        </section>
+
+        <section class="toy-list">
+            <!-- Brown Bear Warmies -->
+            <div class="toy-item">
+                <h3>Brown Bear Warmies</h3>
+                <img src="https://www.bing.com/th?id=OPHS.8lFQoOgQyMKeZg474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1&c=8&pcl=f5f5f5" alt="Brown Bear Warmies">
+                <p>Description: A cuddly, soft plush bear filled with natural grains and lavender. Simply microwave for a few seconds to provide soothing warmth and comfort.</p>
+                <p>Price: $29.99</p>
+                <button class="buy-button" onclick="window.location.href='your-buy-link-for-brown-bear'">Buy Now</button>
+                <button class="contact-me-button" onclick="window.location.href='your-contact-link-for-brown-bear'">Contact Me</button>
+            </div>
+
+            <!-- Brown Curly Bear Warmies -->
+            <div class="toy-item">
+                <h3>Brown Curly Bear Warmies</h3>
+                <img src="https://www.bing.com/th?id=OPHS.8htCX4bKqVn4Uw474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1&c=8&pcl=f5f5f5" alt="Brown Curly Bear Warmies">
+                <p>Description: This adorable curly-haired bear offers the same comforting warmth as the Brown Bear Warmies, with a unique textured fur that's perfect for snuggling.</p>
+                <p>Price: $34.99</p>
+                <button class="buy-button" onclick="window.location.href='your-buy-link-for-brown-curly-bear'">Buy Now</button>
+                <button class="contact-me-button" onclick="window.location.href='your-contact-link-for-brown-curly-bear'">Contact Me</button>
+            </div>
+
+            <!-- Barbie Doll -->
+            <div class="toy-item">
+                <h3>Barbie Doll</h3>
+                <img src="https://www.bing.com/th?id=OIP.2z0JeXx1Iy9F4KsWJMjYTAAAAA&w=127&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Barbie Doll">
+                <p>Description: Classic Barbie Doll featuring a stylish outfit and trendy accessories. Perfect for imaginative play and collection.</p>
+                <p>Price: $19.99</p>
+                <button class="buy-button" onclick="window.location.href='your-buy-link-for-barbie-doll'">Buy Now</button>
+                <button class="contact-me-button" onclick="window.location.href='your-contact-link-for-barbie-doll'">Contact Me</button>
+            </div>
+
+            <!-- Repeat for other toy items such as Car Toys, Lego, Star Wars Toys, and Yo-Yo -->
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us for more information or visit our store.</p>
+    </footer>
 </body>
 </html>
-</body>
-</html>
+
+        
